@@ -30,6 +30,9 @@ public class DynamicSolution {
                     iteratorMax = Math.max(nextVertices, iteratorMax);
                 }
             }
+            if (iteratorMax==-1){
+                return -1;
+            }
             iteratorMax+=initialNode.value;
             initialNode.maxEdgesVal=iteratorMax;
             return iteratorMax;
